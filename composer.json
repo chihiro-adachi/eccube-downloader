@@ -1,0 +1,27 @@
+{
+    "name": "chihiro_adachi/eccube-downloader",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chihiro Adachi"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "hirak/prestissimo": "^0.3.7",
+        "silex/silex": "^2.2",
+        "symfony/config": "^3.3",
+        "symfony/form": "^3.3",
+        "symfony/security-csrf": "^3.3",
+        "symfony/twig-bridge": "^3.3",
+        "symfony/validator": "^3.3",
+        "symfony/var-dumper": "^3.3",
+        "twig/twig": "^2.4"
+    },
+    "config": {
+        "platform": {
+            "php": "7.0.8"
+        }
+    }
+}
