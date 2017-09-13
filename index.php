@@ -43,6 +43,7 @@ $app->match('/', function (Application $app, Request $request) {
     $builder = $app['form.factory']->createBuilder();
     $builder
         ->add('version', ChoiceType::class, [
+            'label' => 'バージョン',
             'choices' => $versions,
             'placeholder' => false,
             'constraints' => [
@@ -50,11 +51,15 @@ $app->match('/', function (Application $app, Request $request) {
             ],
         ])
         ->add('directory', TextType::class, [
-            'constraints' => [
-                new NotBlank(),
+            'label' => '展開するディレクトリ(空白の場合はカレントディレクトリに展開します)',
+            'required' => false,
+            'attr' => [
+                'placeholder' => '/shop'
             ],
         ])
-        ->add('submit', SubmitType::class);
+        ->add('submit', SubmitType::class, [
+            'label' => 'ダウンロード',
+        ]);
 
     $form = $builder->getForm();
     $form->handleRequest($request);
