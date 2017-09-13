@@ -13,7 +13,7 @@
         "silex/silex": "^2.2",
         "symfony/config": "^3.3",
         "symfony/form": "^3.3",
-        "symfony/security-csrf": "^3.3",
+        "symfony/translation": "^3.3",
         "symfony/twig-bridge": "^3.3",
         "symfony/validator": "^3.3",
         "symfony/var-dumper": "^3.3",
